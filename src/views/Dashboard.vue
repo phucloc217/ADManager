@@ -15,8 +15,8 @@ import StatsWidget from '@/components/dashboard/StatsWidget.vue';
             <BestSellingWidget />
         </div>
         <div class="col-span-12 xl:col-span-6">
-            <RevenueStreamWidget />
             <NotificationsWidget />
+            <RevenueStreamWidget />
         </div>
     </div>
 </template>

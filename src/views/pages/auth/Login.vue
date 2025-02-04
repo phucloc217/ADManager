@@ -4,7 +4,6 @@ import { ref } from 'vue';
 
 const email = ref('');
 const password = ref('');
-const checked = ref(false);
 </script>
 
 <template>
@@ -31,8 +30,8 @@ const checked = ref(false);
                                 />
                             </g>
                         </svg>
-                        <div class="text-surface-900 dark:text-surface-0 text-3xl font-medium mb-4">Welcome to PrimeLand!</div>
-                        <span class="text-muted-color font-medium">Sign in to continue</span>
+                        <div class="text-surface-900 dark:text-surface-0 text-3xl font-medium mb-4">AD Manager</div>
+                        <span class="text-muted-color font-medium">Login in to continue</span>
                     </div>
 
                     <div>
@@ -42,14 +41,13 @@ const checked = ref(false);
                         <label for="password1" class="block text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Password</label>
                         <Password id="password1" v-model="password" placeholder="Password" :toggleMask="true" class="mb-4" fluid :feedback="false"></Password>
 
-                        <div class="flex items-center justify-between mt-2 mb-8 gap-8">
-                            <div class="flex items-center">
-                                <Checkbox v-model="checked" id="rememberme1" binary class="mr-2"></Checkbox>
-                                <label for="rememberme1">Remember me</label>
-                            </div>
-                            <span class="font-medium no-underline ml-2 text-right cursor-pointer text-primary">Forgot password?</span>
+                        <div class="flex items-center justify-center mt-2 mb-3 gap-8">
+                            <div>Or</div>
                         </div>
-                        <Button label="Sign In" class="w-full" as="router-link" to="/"></Button>
+                        <div class="flex items-center justify-center mt-2 mb-8 gap-8">
+                            <span class="font-medium no-underline ml-2 text-right cursor-pointer text-primary">Login using Single Sign On</span>
+                        </div>
+                        <Button label="Login" class="w-full" as="router-link" to="/"></Button>
                     </div>
                 </div>
             </div>
