@@ -9,6 +9,27 @@ const model = ref([
         items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
     },
     {
+        label: 'Users Management',
+        items: [
+            { label: 'Create User', icon: 'pi pi-fw pi-user-plus', to: '/user-management/create-single-user' },
+            { label: 'Users List', icon: 'pi pi-fw pi-users', to: '/' }
+        ]
+    },
+    {
+        label: 'Report',
+        items: [
+            { label: 'Users Management', icon: 'pi pi-fw pi-users', to: '/' },
+            { label: 'Computers Management', icon: 'pi pi-fw pi-desktop', to: '/' }
+        ]
+    },
+    {
+        label: 'Settings',
+        items: [
+            { label: 'Rules', icon: 'pi pi-fw pi-list-check', to: '/' },
+            { label: 'Factories & Departments', icon: 'pi pi-fw pi-building', to: '/' }
+        ]
+    },
+    {
         label: 'UI Components',
         items: [
             { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/uikit/formlayout' },
